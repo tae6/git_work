@@ -55,180 +55,58 @@
                 return Temp;
             }
 
-        function read_API_email() {
+        function read_board_API_title() {
 
-            var Temp;
+                var Temp;
 
-            $.ajax({
-                url: 'read_tb1_API.php',
-                type: 'get',
-                dataType: 'json',
-                async: false,
-                success: function (data) {
+                $.ajax({
+                    url: 'read_board_API.php',
+                    type: 'get',
+                    dataType: 'json',
+                    async: false,
+                    success: function (data) {
 
-                    Temp = data.email;
+                        Temp = data.title;
 
-                },
+                    },
 
-                error: function (e) {
-                    alert("");
-                }
-            });
+                    error: function (e) {
+                        alert("");
+                    }
+                });
 
-            return Temp;
-        }
+                return Temp;
+            }
 
-        function read_API_password() {
+            function read_board_API_script() {
 
-            var Temp;
+                var Temp;
 
-            $.ajax({
-                url: 'read_tb1_API.php',
-                type: 'get',
-                dataType: 'json',
-                async: false,
-                success: function (data) {
+                $.ajax({
+                    url: 'read_board_API.php',
+                    type: 'get',
+                    dataType: 'json',
+                    async: false,
+                    success: function (data) {
 
-                    Temp = data.password;
+                        Temp = data.script;
 
-                },
+                    },
 
-                error: function (e) {
-                    alert("");
-                }
-            });
+                    error: function (e) {
+                        alert("");
+                    }
+                });
 
-            return Temp;
-        }
-
-        function read_API_firstname() {
-
-            var Temp;
-
-            $.ajax({
-                url: 'read_tb1_API.php',
-                type: 'get',
-                dataType: 'json',
-                async: false,
-                success: function (data) {
-
-                    Temp = data.firstname;
-
-                },
-
-                error: function (e) {
-                    alert("");
-                }
-            });
-
-            return Temp;
-        }
-
-        function read_API_lastname() {
-
-            var Temp;
-
-            $.ajax({
-                url: 'read_tb1_API.php',
-                type: 'get',
-                dataType: 'json',
-                async: false,
-                success: function (data) {
-
-                    Temp = data.lastname;
-
-                },
-
-                error: function (e) {
-                    alert("");
-                }
-            });
-
-            return Temp;
-        }
-
-        function read_API_country() {
-
-            var Temp;
-
-            $.ajax({
-                url: 'read_tb1_API.php',
-                type: 'get',
-                dataType: 'json',
-                async: false,
-                success: function (data) {
-
-                    Temp = data.country;
-
-                },
-
-                error: function (e) {
-                    alert("");
-                }
-            });
-
-            return Temp;
-        }
-
-        function read_API_zip() {
-
-            var Temp;
-
-            $.ajax({
-                url: 'read_tb1_API.php',
-                type: 'get',
-                dataType: 'json',
-                async: false,
-                success: function (data) {
-
-                    Temp = data.zip;
-
-                },
-
-                error: function (e) {
-                    alert("");
-                }
-            });
-
-            return Temp;
-        }
-
-        function read_API_status() {
-
-            var Temp;
-
-            $.ajax({
-                url: 'read_tb1_API.php',
-                type: 'get',
-                dataType: 'json',
-                async: false,
-                success: function (data) {
-
-                    Temp = data.status;
-
-                },
-
-                error: function (e) {
-                    alert("");
-                }
-            });
-
-            return Temp;
-        }
-
+                return Temp;
+            }
     </script>
 
 </head>
 
 <body>
 
-    <script>document.write(read_API_firstname())</script>
-    <script>document.write(read_API_lastname())</script>
-    <script>document.write(read_API_email())</script>
-    <script>document.write(read_API_country())</script>
-    <script>document.write(read_API_zip())</script>
-    <script>document.write(read_API_status())</script>
-    <script>document.write(read_API_password())</script>
+
 
     <div class="container-xxl position-relative bg-white d-flex p-0">
         <!-- Spinner Start -->
